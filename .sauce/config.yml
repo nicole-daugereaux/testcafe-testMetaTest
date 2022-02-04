@@ -1,0 +1,42 @@
+apiVersion: v1alpha
+kind: testcafe
+showConsoleLog: true
+sauce:
+  region: us-west-1
+  concurrency: 2 # Controls how many suites are executed at the same time.
+  sauceignore: .sauceignore
+# npm:
+#   registry: https://registry.npmjs.org
+#   packages:
+#     "axe-core": "^4.3.0"
+#     "@testcafe-community/axe": "^3.5.0"
+#     "axe-html-reporter": "^2.2.2"
+#     "node-fetch-with-proxy": "^0.1.6"
+#     "insecure": "^0.0.4"
+# skipJsErrors: true
+# clientScripts: [{"module":"axe-core/axe.min.js"}]
+rootDir: ./
+docker:
+  # Affects how test files are transferred to the docker container when using the docker mode.
+  fileTransfer: copy # Choose between mount|copy.
+# Controls what files are available in the context of a test run (unless explicitly excluded by .sauceignore).
+suites:
+- name: test123
+  browserName: "chrome"
+  browserVersion: "latest"
+  src:
+    - "tests/*.test.js"
+  platformName: "windows 10"
+  mode: sauce
+filter:
+  testMeta:
+    TEST_TYPE1: 'Regression'
+testcafe:
+  version: 1.17.1
+# Controls what artifacts to fetch when the suite on Sauce Cloud has finished.
+artifacts:
+  download:
+    when: always
+    match:
+      - console.log
+    directory: ./artifacts/

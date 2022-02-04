@@ -1,0 +1,28 @@
+Sauce TestCafe Runner 1.0.0
+Preparing npm environment
+
+Installing packages: @testcafe-community/axe@^3.5.0 axe-core@^4.3.0 axe-html-reporter@^2.2.2 insecure@^0.0.4 node-fetch-with-proxy@^0.1.6
+npm WARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@2. I'll try to do my best with it!
+npm WARN @testcafe-community/axe@3.5.0 requires a peer of testcafe@* but none is installed. You must install peer dependencies yourself.
+npm WARN The package typescript is included as both a dev and production dependency.
+
++ axe-html-reporter@2.2.3
++ insecure@0.0.4
++ node-fetch-with-proxy@0.1.6
++ axe-core@4.4.0
++ @testcafe-community/axe@3.5.0
+added 86 packages from 97 contributors in 5.458s
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+ERROR No tests match your filter.
+See https://testcafe.io/documentation/402638/reference/configuration-file#filter.
+
+Type "testcafe -h" for help.
+TypeError: Cannot read property '_attributes' of undefined
+    at exports.generateJunitFile (D:\sauce-testcafe-runner\1.0.0\bundle\src\sauce-testreporter.js:299:20)
+    at run (D:\sauce-testcafe-runner\1.0.0\bundle\src\testcafe-runner.js:236:3)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)

@@ -1,0 +1,50 @@
+Sauce TestCafe Runner 1.0.0
+Preparing npm environment
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+ Running tests in:
+ - Chrome 97.0.4692.71 / Windows 10
+
+ √ Change Element Style - Hide an element
+ × Change Element Style - Change header color
+
+   1) ReferenceError: test is not defined
+
+      Browser: Chrome 97.0.4692.71 / Windows 10
+
+         17 |
+         18 |    await t.expect(populateButton.visible).notOk();
+         19 |});
+         20 |
+         21 |test('Change header color', async t => {
+       > 22 |    test.meta({
+         23 |      TEST_TYPE1: "Regression"
+         24 |    });
+         25 |    const header            = Selector('h1');
+         26 |    const removeHeaderColor = ClientFunction(() => {
+         27 |        document.querySelector('h1').style.color = '#111';
+
+         at <anonymous>
+
+   (D:\sauce-testcafe-runner\1.0.0\bundle\__project__\tests\example.test.js:22:5)
+         at asyncGeneratorStep
+
+   (D:\sauce-testcafe-runner\1.0.0\bundle\__project__\tests\example.test.js:3:224)
+         at _next
+
+   (D:\sauce-testcafe-runner\1.0.0\bundle\__project__\tests\example.test.js:3:562)
+         at <anonymous>
+
+   (D:\sauce-testcafe-runner\1.0.0\bundle\__project__\tests\example.test.js:3:727)
+         at <anonymous>
+
+   (D:\sauce-testcafe-runner\1.0.0\bundle\__project__\tests\example.test.js:3:468)
+         at <anonymous>
+      (D:\sauce-testcafe-runner\1.0.0\bundle\__project__\tests\example.test.js:21:5)
+
+
+
+ 1/2 failed (3s)

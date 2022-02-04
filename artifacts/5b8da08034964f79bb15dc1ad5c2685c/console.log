@@ -1,0 +1,15 @@
+Sauce TestCafe Runner 1.0.0
+Preparing npm environment
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+ERROR No tests match your filter.
+See https://testcafe.io/documentation/402638/reference/configuration-file#filter.
+
+Type "testcafe -h" for help.
+TypeError: Cannot read property '_attributes' of undefined
+    at exports.generateJunitFile (D:\sauce-testcafe-runner\1.0.0\bundle\src\sauce-testreporter.js:299:20)
+    at run (D:\sauce-testcafe-runner\1.0.0\bundle\src\testcafe-runner.js:236:3)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)

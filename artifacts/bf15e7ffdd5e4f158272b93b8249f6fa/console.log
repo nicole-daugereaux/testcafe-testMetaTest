@@ -1,0 +1,33 @@
+Sauce TestCafe Runner 1.0.0
+Preparing npm environment
+
+Installing packages: @testcafe-community/axe@^3.5.0 axe-core@^4.3.0 axe-html-reporter@^2.2.2 insecure@^0.0.4 node-fetch-with-proxy@^0.1.6
+npm WARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@2. I'll try to do my best with it!
+npm WARN @testcafe-community/axe@3.5.0 requires a peer of testcafe@* but none is installed. You must install peer dependencies yourself.
+npm WARN The package typescript is included as both a dev and production dependency.
+
++ insecure@0.0.4
++ axe-html-reporter@2.2.3
++ axe-core@4.4.0
++ node-fetch-with-proxy@0.1.6
++ @testcafe-community/axe@3.5.0
+added 86 packages from 97 contributors in 5.983s
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+ERROR Could not find test files at the following location: "D:\sauce-testcafe-runner\1.0.0\bundle\__project__".
+Check patterns for errors:
+
+tests/features/SetShoppingCCHD.ts
+
+or launch TestCafe from a different directory.
+For more information on how to specify test locations, see https://testcafe.io/documentation/402639/reference/command-line-interface#file-pathglob-pattern.
+
+Type "testcafe -h" for help.
+TypeError: Cannot read property '_attributes' of undefined
+    at exports.generateJunitFile (D:\sauce-testcafe-runner\1.0.0\bundle\src\sauce-testreporter.js:299:20)
+    at run (D:\sauce-testcafe-runner\1.0.0\bundle\src\testcafe-runner.js:236:3)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
