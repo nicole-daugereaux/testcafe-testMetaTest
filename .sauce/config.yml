@@ -28,9 +28,9 @@ suites:
     - "tests/*.test.js"
   platformName: "windows 10"
   mode: sauce
-filter:
-  testMeta:
-    TEST_TYPE1: 'Regression'
+  filter:
+    testMeta:
+      TEST_TYPE1: 'Regression'
 testcafe:
   version: 1.17.1
 # Controls what artifacts to fetch when the suite on Sauce Cloud has finished.
